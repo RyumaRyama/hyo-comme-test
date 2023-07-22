@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+#hyo-comme-viewer-container {
+  font-family: Arial;
+}
+
+#chat-point-counter-setting {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+#color-setting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.color-setting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.color-input {
+  width: 4em;
+}
+
+#font-family-setting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.comment {
+  display: flex;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+  overflow: visible;
+  overflow-wrap: break-word;
+  max-width: 700px;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  border: solid 3px rgba(0, 0, 0, 9);
+  border-radius: 15px;
+
+  animation-name: hyokkori, fade-out;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+
+  font-size: 25px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.comment:before {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid rgb(0, 0, 0);
+}
+
+.comment > img {
+  width: 25px;
+}
+
+@keyframes hyokkori {
+  from {
+    transform: translateY(200px);
+  }
+
+  3% {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes fade-out {
+  83% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
