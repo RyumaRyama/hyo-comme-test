@@ -1,5 +1,5 @@
 const ws = new ReconnectingWebSocket(
-  'wss://80c7-2001-f71-1e0-8a00-e841-6e6f-a715-6b4c.ngrok-free.app',
+  'ws://chatsocket.ryumaryama.com:19960',
   null,
   {
     debug: true,
