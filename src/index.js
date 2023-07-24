@@ -1,5 +1,5 @@
 const ws = new ReconnectingWebSocket(
-  'wss://chatsocket.ryumaryama.com:19960',
+  'ws://chatsocket.ryumaryama.com:19960',
   null,
   {
     debug: true,
